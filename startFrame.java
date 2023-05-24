@@ -13,19 +13,19 @@ public class startFrame extends JFrame implements ActionListener
 {
     JButton play;
     JLabel title;
-    
+
     JButton bookButton;
     JButton orderButton;
     JLabel restaurantBack;
     JLabel desk;
     JLabel minion;
     JLayeredPane restaurantLayers;
-    
+
     Timer timer;
     startFrame(){
         ImageIcon playImage = new ImageIcon("assets/play button.png");
         ImageIcon rolloverImage = new ImageIcon("assets/hoverplay.png");
-        
+
         play = new JButton();
         play.setFocusable(false);
         play.setBounds(385,450,230,72);
@@ -36,32 +36,33 @@ public class startFrame extends JFrame implements ActionListener
         play.setBorder(null);
         play.setRolloverEnabled(true);
         play.setRolloverIcon(rolloverImage);
-        
+
         setTitle("Minion Bananaria!");
-        
+
         ImageIcon image = new ImageIcon("assets/bananapudding.png");
         setIconImage(image.getImage());
-        
+
         getContentPane().setBackground(new Color(0xFAE7B5));
-        
+
         title = new JLabel();
         ImageIcon titleImage = new ImageIcon("assets/title (1).png");
         title.setIcon(titleImage);
         title.setHorizontalAlignment(JLabel.CENTER);
         title.setVerticalAlignment(JLabel.TOP);
-        
+
         title.setLayout(null);
-        
+
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         setSize(1000,750);
-        
-        
-        
+
+        ImagePanel image_panel = new ImagePanel();
+        restaurantLayers.add(image_panel);
+
         setVisible(true);
         add(play);
         add(title);
-        
+
         
     }
     public void actionPerformed(ActionEvent event){
@@ -74,39 +75,35 @@ public class startFrame extends JFrame implements ActionListener
             repaint();
         }
     }
+
     private void switchToRestaurant(){
         ImageIcon restaurantBackIMG = new ImageIcon("assets/restaurant.png");
         ImageIcon minionIMG = new ImageIcon("assets/minion.png");
         ImageIcon deskIMG = new ImageIcon("assets/desk.png");
-        
+
         restaurantBack = new JLabel();
         restaurantBack.setIcon(restaurantBackIMG);
         restaurantBack.setBounds(0,0,1000, 750);
-        
+
         minion = new JLabel();
         minion.setIcon(minionIMG);
         minion.setBounds(700,0,1000, 750);
-        
+
         desk = new JLabel();
         desk.setIcon(deskIMG);
         desk.setBounds(0,0, 1000, 750);
-        
+
         restaurantLayers = new JLayeredPane();
         restaurantLayers.setBounds(0, 0, 1000, 750);
-        
+
         restaurantLayers.add(minion);
         restaurantLayers.add(desk);
         restaurantLayers.add(restaurantBack);
-        
-        ImagePanel image_panel = new ImagePanel();
-        restaurantLayers.add(image_panel);
-        
+
         add(restaurantLayers);
-        
-        
+
     }
     private void animateMinion(){
-        
     }
 }
 

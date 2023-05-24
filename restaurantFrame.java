@@ -33,7 +33,9 @@ public class restaurantFrame extends JFrame implements ActionListener
         ImageIcon minionIMG = new ImageIcon("assets/minion.png");
         ImageIcon deskIMG = new ImageIcon("assets/desk.png");
         ImageIcon orderIMG = new ImageIcon("assets/order.png");
-        ImageIcon orderButtonIMG = new ImageIcon("assets/play button.png");
+        ImageIcon takeOrderIMG = new ImageIcon("assets/play button.png");
+        
+        
            
         restaurantBack = new JLabel();
         restaurantBack.setIcon(restaurantBackIMG);
@@ -43,19 +45,19 @@ public class restaurantFrame extends JFrame implements ActionListener
         minion.setIcon(minionIMG);
         minion.setBounds(450,18,1000, 750);
         
-        minionOrder = new JLabel();
-        minionOrder.setIcon(orderIMG);
-        minionOrder.setBounds(600,100,200,100);
-        
+        minionOrder = new JLabel(); 
+        minionOrder.setIcon(orderIMG); 
+        minionOrder.setBounds(470,570,200,100);
         
         orderButton = new JButton();
         orderButton.setFocusable(false);
-        orderButton.setBounds(470,540,200,100);
+        orderButton.setBounds(450,450,350,350);
         orderButton.addActionListener(this);
-        orderButton.setIcon(orderButtonIMG);
+        orderButton.setIcon(takeOrderIMG);
         orderButton.setBackground(new Color(0xFFFFFF));
         orderButton.setContentAreaFilled(false);
         orderButton.setBorder(null);
+        
         
         restaurantLayers = new JLayeredPane();
         restaurantLayers.setBounds(0, 0, 1000, 750);
@@ -63,8 +65,8 @@ public class restaurantFrame extends JFrame implements ActionListener
         restaurantLayers.add(minionOrder);
         restaurantLayers.add(orderButton);
         restaurantLayers.add(minion);
+         
         restaurantLayers.add(restaurantBack);
-        
         
         this.add(restaurantLayers);
         
