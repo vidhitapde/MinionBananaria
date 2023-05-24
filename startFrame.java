@@ -55,6 +55,9 @@ public class startFrame extends JFrame implements ActionListener
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         setSize(1000,750);
+        
+        
+        
         setVisible(true);
         add(play);
         add(title);
@@ -94,6 +97,9 @@ public class startFrame extends JFrame implements ActionListener
         restaurantLayers.add(minion);
         restaurantLayers.add(desk);
         restaurantLayers.add(restaurantBack);
+        
+        ImagePanel image_panel = new ImagePanel();
+        restaurantLayers.add(image_panel);
         
         add(restaurantLayers);
         

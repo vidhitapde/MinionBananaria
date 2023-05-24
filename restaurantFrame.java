@@ -15,6 +15,7 @@ public class restaurantFrame extends JFrame implements ActionListener
     JLabel restaurantBack;
     JLabel desk;
     JLabel minion;
+    JLabel minionOrder;
     JLayeredPane restaurantLayers;
     
     kitchenFrame kitchen;
@@ -31,7 +32,8 @@ public class restaurantFrame extends JFrame implements ActionListener
         ImageIcon restaurantBackIMG = new ImageIcon("assets/Bakery.jpg");
         ImageIcon minionIMG = new ImageIcon("assets/minion.png");
         ImageIcon deskIMG = new ImageIcon("assets/desk.png");
-        ImageIcon orderIMG = new ImageIcon("assets/New Project.png");
+        ImageIcon orderIMG = new ImageIcon("assets/order.png");
+        ImageIcon orderButtonIMG = new ImageIcon("assets/play button.png");
            
         restaurantBack = new JLabel();
         restaurantBack.setIcon(restaurantBackIMG);
@@ -41,11 +43,16 @@ public class restaurantFrame extends JFrame implements ActionListener
         minion.setIcon(minionIMG);
         minion.setBounds(450,18,1000, 750);
         
+        minionOrder = new JLabel();
+        minionOrder.setIcon(orderIMG);
+        minionOrder.setBounds(600,100,200,100);
+        
+        
         orderButton = new JButton();
         orderButton.setFocusable(false);
-        orderButton.setBounds(600,100,200,100);
+        orderButton.setBounds(470,540,200,100);
         orderButton.addActionListener(this);
-        orderButton.setIcon(orderIMG);
+        orderButton.setIcon(orderButtonIMG);
         orderButton.setBackground(new Color(0xFFFFFF));
         orderButton.setContentAreaFilled(false);
         orderButton.setBorder(null);
@@ -53,9 +60,11 @@ public class restaurantFrame extends JFrame implements ActionListener
         restaurantLayers = new JLayeredPane();
         restaurantLayers.setBounds(0, 0, 1000, 750);
         
+        restaurantLayers.add(minionOrder);
         restaurantLayers.add(orderButton);
         restaurantLayers.add(minion);
         restaurantLayers.add(restaurantBack);
+        
         
         this.add(restaurantLayers);
         
