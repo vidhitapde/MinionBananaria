@@ -1,3 +1,4 @@
+import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
@@ -16,6 +17,10 @@ public class MyFrame extends JFrame
         this.add(panel);
         this.pack();
         this.setLocationRelativeTo(null);
+        
         this.setVisible(true);
+        
     }
+    
+        
 }
