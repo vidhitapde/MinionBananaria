@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=bananaSmoothie1
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ bananaSmoothieTest\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=event
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment10.params=
+comment10.target=void\ moveDown()
+comment11.params=e
+comment11.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=
+comment4.target=void\ switchTo2()
+comment5.params=
+comment5.target=void\ switchTo3()
+comment6.params=
+comment6.target=javax.swing.JButton\ getNextButton()
+comment7.params=
+comment7.target=javax.swing.JButton\ getRestaurantButton()
+comment7.text=\r\n\ \ \ \ public\ void\ mouseClicked(MouseEvent\ e){\r\n\ \ \ \ JLabel\ currBatter\ \=\ null;\r\n\ \ \ \ if(batterCount\ <\ 6){\r\n\r\n\ \ \ \ if(batterCount\ \=\=0){\r\n\ \ \ \ currBatter\ \=\ batter1;\r\n\ \ \ \ }else\ if(batterCount\ \=\=\ 1){\r\n\ \ \ \ currBatter\ \=\ batter2;\r\n\ \ \ \ }else\ if(batterCount\ \=\=2){\r\n\ \ \ \ currBatter\ \=\ batter3;\r\n\ \ \ \ }else\ if(batterCount\ \=\=\ 3){\r\n\ \ \ \ currBatter\ \=\ batter4;\r\n\ \ \ \ }else\ if\ (batterCount\ \=\=\ 4){\r\n\ \ \ \ currBatter\ \=\ batter5;\r\n\ \ \ \ }else\ if\ (batterCount\ \=\=\ 5){\r\n\ \ \ \ currBatter\ \=\ batter6;\r\n\ \ \ \ }\r\n\ \ \ \ currBatter.setIcon(new\ ImageIcon("assets/battercircle.png"));\r\n\ \ \ \ this.add(currBatter);\r\n\ \ \ \ this.moveToFront(currBatter);\r\n\r\n\ \ \ \ currBatter.setBounds((int)(MouseInfo.getPointerInfo().getLocation().getX())-110,\ (int)(MouseInfo.getPointerInfo().getLocation().getY())-120,\ 208,\ 208);\r\n\r\n\ \ \ \ if(griddleimgs.size()\ >\ 0){\r\n\ \ \ \ griddle.setIcon(griddleimgs.remove(0));\r\n\ \ \ \ }\r\n\r\n\ \ \ \ repaint();\r\n\ \ \ \ batterCount++;\r\n\r\n\ \ \ \ }\r\n\ \ \ \ if(batterCount\=\=6){\r\n\ \ \ \ this.add(returnButton);\r\n\ \ \ \ this.moveToFront(returnButton);\r\n\ \ \ \ returnButton.setVisible(true);\r\n\ \ \ \ repaint();\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ mousePressed(MouseEvent\ e){\r\n\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ mouseReleased(MouseEvent\ e){\r\n\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ mouseEntered(MouseEvent\ e){\r\n\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ mouseExited(MouseEvent\ e){\r\n\r\n\ \ \ \ }\r\n
+comment8.params=
+comment8.target=void\ oscillate()
+comment9.params=e
+comment9.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=12
