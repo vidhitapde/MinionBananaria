@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=kitchenFrame
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ kitchenFrame\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=frame
+comment1.target=kitchenFrame(introFrame)
+comment2.params=event
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=void\ paintNewOrder()
+numComments=4
