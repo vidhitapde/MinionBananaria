@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=restaurantFrame
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ restaurantFrame\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=frame
+comment1.target=restaurantFrame(introFrame)
+comment2.params=
+comment2.target=restaurant\ getRestaurant()
+comment3.params=
+comment3.target=void\ addOrder()
+comment4.params=event
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=
+comment5.target=void\ checkForDone()
+numComments=6
